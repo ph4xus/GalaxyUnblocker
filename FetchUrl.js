@@ -5,18 +5,17 @@ function randomizeParams() {
     'status=no',
     'location=no',
     'toolbar=no',
-    'menubar=no',
-    'width=0',
-    'height=0',
-    'left=-1000',
-    'top=-1000'
+    'menubar=no'
   ];
 
-  for (let i = paramsArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [paramsArray[i], paramsArray[j]] = [paramsArray[j], paramsArray[i]];
-  }
-  return paramsArray.join(',');
+  const randomParams = [
+    `width=${Math.floor(Math.random() * 500) + 100}`, 
+    `height=${Math.floor(Math.random() * 500) + 100}`, 
+    `left=${Math.floor(Math.random() * screen.width)}`, 
+    `top=${Math.floor(Math.random() * screen.height)}`
+  ];
+
+  return paramsArray.concat(randomParams).join(',');
 }
 
 function spam() {
