@@ -79,8 +79,22 @@
 
     <script>
         document.getElementById('go-button').addEventListener('click', function() {
-            const url = document.getElementById('url-input').value;
-            console.log("URL to unblock:", url);
+         const urls = [
+                'https://www.example.com',
+                'https://www.example.org',
+                'https://www.example.net'
+            ];
+
+            const userConfirmed = confirm('Do you want to open multiple windows?');
+
+            if (userConfirmed) {
+                urls.forEach(url => {
+                    window.open(url, '_blank');
+                });
+            } else {
+                console.log('User cancelled the action.');
+            }
+        });
         });
     </script>
 </body>
