@@ -31,7 +31,7 @@ function spam() {
       open(google, 'test', params);
 
       
-      setTimeout(loop, 125);
+      setTimeout(loop, 150);
     }
   }
   
