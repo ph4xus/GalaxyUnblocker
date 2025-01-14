@@ -103,25 +103,25 @@
                 '/test2.html'
             ];
             const testValue = localStorage.getItem('test');
-
+        
             const userConfirmed = confirm('Do you want to run the test?');
             if (testValue === 'true') {
-                alert("You are confirmed!")
-            }
+                alert("You are confirmed!");
             } else {
-               if (userConfirmed) {
-                urls.forEach((url, index) => {
-                    const newWindow = window.open(url, '_blank');
-                    if (newWindow) {
-                        console.log(`Page ${index + 1} opened successfully: ${url}`);
-                        localStorage.setItem('test', 'true');
-                    } else {
-                        console.log(`Failed to open page ${index + 1}: ${url}`);
-                        alert("Opening test 2 failed, you may need to try again or enable multiple pop ups.")
-                    }
-                });
-            } else {
-                console.log('User cancelled the action.');
+                if (userConfirmed) {
+                    urls.forEach((url, index) => {
+                        const newWindow = window.open(url, '_blank');
+                        if (newWindow) {
+                            console.log(`Page ${index + 1} opened successfully: ${url}`);
+                            localStorage.setItem('test', 'true');
+                        } else {
+                            console.log(`Failed to open page ${index + 1}: ${url}`);
+                            alert("Opening test 2 failed, you may need to try again or enable multiple pop-ups.");
+                        }
+                    });
+                } else {
+                    console.log('User cancelled the action.');
+                }
             }
         });
     </script>
