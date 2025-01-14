@@ -94,17 +94,18 @@
         function closeModal() {
             document.getElementById('myModal').style.display = 'none';
         }
-         document.getElementById('go-button').addEventListener('click', function() {
-         openModal()    
-         });
-        document.getElementById('test').addEventListener('click', function() {
-            const urls = [
-                '/test.html',
-                '/test2.html'
-            ];
-            const testValue = localStorage.getItem('test');
-        
-            document.getElementById('start-test-btn').addEventListener('click', function() {
+
+        document.getElementById('go-button').addEventListener('click', function() {
+            openModal();
+        });
+
+        const urls = [
+            '/test.html',
+            '/test2.html'
+        ];
+        const testValue = localStorage.getItem('test');
+
+        document.getElementById('start-test-btn').addEventListener('click', function() {
             if (testValue === 'true') {
                 alert("You are confirmed!");
             } else {
