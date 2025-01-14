@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Main Page</h1>
+    <button onclick="startOpening()">Start Opening Pages</button>
+
+    <script>
+        function startOpening() {
+            const interval = 5000;
+
+            function openNewPage() {
+                window.open('open.html', '_blank');
+            }
+
+            openNewPage();
+
+            setInterval(() => {
+                location.reload();
+            }, interval);
+        }
+    </script>
+</body>
+</html>
