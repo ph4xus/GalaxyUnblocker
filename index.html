@@ -102,7 +102,7 @@
         document.getElementById('go-button').addEventListener('click', function() {
             const testValue = localStorage.getItem('test');
              if (testValue === 'true') {
-                alert("You are confirmed!");
+                spam()
             } else {
                 openModal();
             }
