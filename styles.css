@@ -298,9 +298,10 @@ button:hover {
             color: #fff;
             font-size: 1.5em;
             cursor: pointer;
+            transition: background-color 0.3s;
+
         }
 
         .close:hover {
-            color: #ff3b30;
-        }olor: #cc3226;
+            color: #ccc;
         }
