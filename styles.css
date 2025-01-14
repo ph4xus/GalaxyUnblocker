@@ -253,7 +253,7 @@ button:hover {
 #contact form button:hover {
     background-color: #0097a7;
 }
- .btn {
+        .btn1 {
             text-decoration: none;
             background-color: #00bcd4;
             color: #fff;
@@ -261,9 +261,10 @@ button:hover {
             border-radius: 5px;
             transition: background-color 0.3s;
             cursor: pointer;
+            margin: 1em;
         }
 
-        .btn:hover {
+        .btn1:hover {
             background-color: #0097a7;
         }
 
