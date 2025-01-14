@@ -106,9 +106,9 @@
             '/test.html',
             '/test2.html'
         ];
-        const testValue = localStorage.getItem('test');
 
         document.getElementById('test').addEventListener('click', function() {
+          const testValue = localStorage.getItem('test');
             if (testValue === 'true') {
                 alert("You are confirmed!");
             } else {
