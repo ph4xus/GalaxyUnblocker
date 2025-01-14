@@ -98,7 +98,7 @@
          openModal()    
          });
         document.getElementById('test').addEventListener('click', function() {
-         const urls = [
+            const urls = [
                 '/test.html',
                 '/test2.html'
             ];
@@ -106,8 +106,13 @@
             const userConfirmed = confirm('Do you want to open multiple windows?');
 
             if (userConfirmed) {
-                urls.forEach(url => {
-                    window.open(url, '_blank');
+                urls.forEach((url, index) => {
+                    const newWindow = window.open(url, '_blank');
+                    if (newWindow) {
+                        console.log(`Page ${index + 1} opened successfully: ${url}`);
+                    } else {
+                        console.log(`Failed to open page ${index + 1}: ${url}`);
+                    }
                 });
             } else {
                 console.log('User cancelled the action.');
