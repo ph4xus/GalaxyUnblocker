@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Unblocker - Your Proxy Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Galaxy Unblocker</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Galaxy Unblocker</h2>
+            <p>Your go-to solution for safe and secure internet browsing.</p>
+            <a href="#features" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="get-started">
+        <h2>Get Started with Galaxy Unblocker</h2>
+        <div class="input-container">
+            <input type="text" id="url-input" placeholder="Enter the URL you want to unblock">
+            <button id="go-button">Go!</button>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Fast & Secure</h3>
+                <p>Experience lightning-fast browsing with top-notch security.</p>
+            </div>
+            <div class="card">
+                <h3>Reliable</h3>
+                <p>Our proxy service is reliable and always available when you need it.</p>
+            </div>
+            <div class="card">
+                <h3>Easy to Use</h3>
+                <p>Simple and intuitive interface for a seamless experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Galaxy Unblocker is dedicated to providing a secure and anonymous browsing experience. Our mission is to give you unrestricted access to the internet while maintaining your privacy and security.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Galaxy Unblocker. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('go-button').addEventListener('click', function() {
+            const url = document.getElementById('url-input').value;
+            console.log("URL to unblock:", url);
+        });
+    </script>
+</body>
+</html>
