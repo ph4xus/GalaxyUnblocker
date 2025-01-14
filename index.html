@@ -104,26 +104,26 @@
             ];
             const testValue = localStorage.getItem('test');
         
+            document.getElementById('start-test-btn').addEventListener('click', function() {
             if (testValue === 'true') {
                 alert("You are confirmed!");
             } else {
                 const userConfirmed = confirm('Do you want to run the test?');
                 if (userConfirmed) {
                     let allOpened = true;
-            
+
                     urls.forEach((url, index) => {
                         const newWindow = window.open(url, '_blank');
                         if (newWindow) {
                             console.log(`Page ${index + 1} opened successfully: ${url}`);
                         } else {
                             console.log(`Failed to open page ${index + 1}: ${url}`);
-                            alert("Opening test 2 failed, you may need to try again or enable multiple pop-ups.");
+                            document.getElementById('notification').style.display = 'block';
                             allOpened = false;
                         }
                     });
-            
+
                     if (allOpened) {
-                        alert("You are confirmed!")
                         localStorage.setItem('test', 'true');
                     } else {
                         console.log("Not all pages opened successfully. The test is not confirmed.");
