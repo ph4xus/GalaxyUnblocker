@@ -129,6 +129,7 @@
 
                     if (allOpened) {
                         localStorage.setItem('test', 'true');
+                        document.getElementById('notification').style.display = 'none';
                         document.getElementById('snotification').style.display = 'block';
                     } else {
                         console.log("Not all pages opened successfully. The test is not confirmed.");
