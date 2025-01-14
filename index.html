@@ -77,16 +77,14 @@
         <p>&copy; 2025 Galaxy Unblocker. All rights reserved.</p>
     </footer>    
     
-<div id="myModal" class="modal">
+    <div id="myModal" class="modal">
         <div class="modal-content">
+            <button class="close" onclick="closeModal()">&times;</button>
             <h2>Important Information</h2>
             <p>Since the Unblocker opens websites in a new page, you need to allow multiple URLs. When the test runs, please ensure to allow it when it is blocked.</p>
-            <button id="test" class="btn1" onclick="runTest()">Run Test</button>
-            <button class="close" onclick="closeModal()">Close</button>
+            <button id="test" class="btn" onclick="runTest()">Run Test</button>
         </div>
     </div>
-
-
     
     <script>
         function openModal() {
