@@ -156,6 +156,8 @@ button:hover {
     margin-bottom: 1em;
 }
 
+/* Updated styles.css */
+
 .input-container {
     display: flex;
     justify-content: center;
@@ -173,10 +175,7 @@ button:hover {
     background-color: #1a1a1a;
     color: #fff;
     outline: none;
-}
-
-#url-input::placeholder {
-    color: #888;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
 }
 
 #go-button {
@@ -188,6 +187,7 @@ button:hover {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
 }
 
 #go-button:hover {
