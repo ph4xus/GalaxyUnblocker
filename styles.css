@@ -305,3 +305,14 @@ button:hover {
         .close:hover {
             color: #ccc;
         }
+        #notification {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #f44336; /* Red color for error notification */
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
