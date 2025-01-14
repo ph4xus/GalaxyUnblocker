@@ -24,16 +24,13 @@ function spam() {
       let params = randomizeParams();
       
       const words = ["word 1", "word2"];
-            //const words = ["island boys kissing","isis application form","penis enlargment pills","pornhub gay","free v bucks generators","why is age of consent so old here","free gay porn","little boys kissing","gay hentai","massive gay orgy","fortnite sus emotes to do","thicc chun li hips","chun li doing party hips 10 hours loop"]
+      //const words = ["island boys kissing","isis application form","penis enlargment pills","pornhub gay","free v bucks generators","why is age of consent so old here","free gay porn","little boys kissing","gay hentai","massive gay orgy","fortnite sus emotes to do","thicc chun li hips","chun li doing party hips 10 hours loop"]
 
       let google = "https://www.google.com/search?surl=1&sca_esv=3ec098e3b7112be9&rlz=1CAKLUN_enUS1139&q=" + words[Math.floor(Math.random() * words.length)] + "&udm=2";
       
-      // Open the URL in a new window without waiting for it to load
-      setTimeout(() => {
-        window.open(google, 'test', params);
-      }, 0);
+      open(google, 'test', params);
+
       
-      // Continue the loop without waiting
       setTimeout(loop, 125);
     }
   }
