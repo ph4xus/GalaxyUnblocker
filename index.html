@@ -75,10 +75,27 @@
 
     <footer>
         <p>&copy; 2025 Galaxy Unblocker. All rights reserved.</p>
-    </footer>
-
+    </footer>    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>Important Information</h2>
+            <p>Since the Unblocker opens websites in a new page, you need to allow multiple URLs. When the test runs, please ensure to allow it when it is blocked.</p>
+            <button class="close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    
     <script>
-        document.getElementById('go-button').addEventListener('click', function() {
+        function openModal() {
+            document.getElementById('myModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+         document.getElementById('test').addEventListener('click', function() {
+         openModal()    
+         });
+        document.getElementById('test').addEventListener('click', function() {
          const urls = [
                 'https://www.example.com',
                 'https://www.example.org',
