@@ -16,7 +16,7 @@ function randomizeParams() {
 }
 
 function spam() {
-  if (2 + 2 === 4) {
+  while (2 + 2 === 4) {
     let params = randomizeParams();
     
     const words = ["word 1", "word2"];
